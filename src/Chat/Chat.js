@@ -41,9 +41,9 @@ class Chat extends Component {
         }
       });
     });
-    this.setState((pre) => {
-      pre.messages.concat(message, answerList);
-    });
+    this.setState((pre) => ({
+      messages: pre.messages.concat(message, answerList),
+    }));
   };
 
   render() {
